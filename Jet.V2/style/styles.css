@@ -1,0 +1,209 @@
+/** Color del fondo del documento **/
+body {
+    color: #ffffff;
+}
+
+/** Deshacerse de los bordes, no es necesario si se usa normalize.css **/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/** Empieza el header **/
+header {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    height: 5.5rem;
+    padding: .1rem .8rem;
+    border-bottom: .2rem solid rgb(132, 12, 60);
+    background-color: rgba(25, 25, 25, 255);
+}
+
+.logo {
+    border-right: .2rem solid rgb(132, 12, 60);
+}
+
+.header .logo img {
+    height: 5rem;
+    width: auto;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.header .logo img:hover {
+    transform: scale(110%);
+
+}
+
+.header_buscador {
+    font-size: 1.6rem;
+
+}
+
+.header .header_content {
+    display: flex;
+    margin: 1.4rem .5rem;
+}
+
+.header_iconos svg {
+    background-color: whitesmoke;
+    border-radius: 50%;
+    margin-left: 1rem;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.header .header_content .header_iconos svg:hover {
+    transform: scale(114%);
+}
+
+.header_buscador button {
+    font-weight: 700;
+    background-color: white;
+    height: 2.2rem;
+    width: 2.2rem;
+    border: none;
+    position: relative;
+    top: .3rem;
+    transition: all .5s;
+}
+
+.header_buscador button:hover {
+    transform: scale(114%);
+}
+
+.header .header_content .header_buscador svg {
+    margin-top: .2rem;
+}
+
+.header_content input {
+    padding: .6rem .5rem;
+}
+
+.header_iconos a{
+    text-decoration: none;
+    color: black;
+}
+
+.header_buscador button:active{background-color: rgb(132, 12, 60);}
+
+.header_iconos svg:active{background-color: rgb(132, 12, 60);}
+
+/** Termina el header **/
+
+/** Empieza el footer **/
+
+
+
+footer {
+    background-color: rgba(25, 25, 25, 255);
+    height: auto;
+    padding: 2rem 0;
+}
+
+.footer_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.footer_container a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.derechos {
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+/** Termina el footer **/
+
+/** Inicia aviso de privacidad. **/
+
+.angelito{
+    height: 100% ;
+    min-height: 100vh;
+}
+
+.aviso_privacidad{
+    text-align: center;
+    height: auto;
+    margin: 3rem;
+    
+}
+
+.aviso_privacidad h1{
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin: 1rem 0;
+    color: rgb(0, 0, 0);
+}
+
+.aviso_privacidad  p{
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+}
+
+.aviso_privacidad h2{
+    color: rgb(0, 0, 0);
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 2rem 0;
+}
+    
+.aviso_privacidad a{
+    display: grid;
+    margin: 1rem;
+    text-decoration: none;
+    color: black;
+
+}
+
+.regreso a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 1.5rem;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: black;
+    transition: background-color 0.3s ease;
+}
+
+.regreso a:hover {
+    background-color: #333333;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+
+    .footer_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .header_buscador, .header_iconos svg{
+        display: none;
+    }
+
+
+    
+}
+
+
+@media screen and (min-height: 1216px) {
+    .aviso_privacidad h2 , .aviso_privacidad p, .aviso_privacidad a{
+        font-size: 2rem;
+    }
+    
+}
