@@ -15,82 +15,40 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    justify-items: center;
-    height: 5.5rem;
+    align-items: center;
+    height: 5.5rem; /* Altura del header */
     padding: .1rem .8rem;
     border-bottom: .2rem solid rgb(132, 12, 60);
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    width: 100%;
     background-color: rgba(25, 25, 25, 255);
+    color: white; /* Asegurar que el texto sea visible */
 }
 
-.logo {
-    border-right: .2rem solid rgb(132, 12, 60);
+.marca img {
+    max-height: 50px;
 }
 
-.header .logo img {
-    height: 5rem;
-    width: auto;
-    transition: all .5s;
-    cursor: pointer;
-}
-
-.header .logo img:hover {
-    transform: scale(110%);
-
-}
-
-.header_buscador {
-    font-size: 1.6rem;
-
-}
-
-.header .header_content {
+.login {
     display: flex;
-    margin: 1.4rem .5rem;
+    gap: 20px;
 }
 
-.header_iconos svg {
-    background-color: whitesmoke;
-    border-radius: 50%;
-    margin-left: 1rem;
-    cursor: pointer;
-    transition: all .5s;
-}
-
-.header .header_content .header_iconos svg:hover {
-    transform: scale(114%);
-}
-
-.header_buscador button {
-    font-weight: 700;
-    background-color: white;
-    height: 2.2rem;
-    width: 2.2rem;
-    border: none;
-    position: relative;
-    top: .3rem;
-    transition: all .5s;
-}
-
-.header_buscador button:hover {
-    transform: scale(114%);
-}
-
-.header .header_content .header_buscador svg {
-    margin-top: .2rem;
-}
-
-.header_content input {
-    padding: .6rem .5rem;
-}
-
-.header_iconos a{
+.login a{
     text-decoration: none;
-    color: black;
+    color: white; /* Cambiado a blanco para mejor visibilidad */
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #0091AD;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-.header_buscador button:active{background-color: rgb(132, 12, 60);}
-
-.header_iconos svg:active{background-color: rgb(132, 12, 60);}
+.login a:hover {
+    background-color: #0056b3;
+}
 
 /** Termina el header **/
 
