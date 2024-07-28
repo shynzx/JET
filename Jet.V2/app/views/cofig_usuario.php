@@ -34,7 +34,7 @@ session_start();
 					<a href="#">
 						<ion-icon name="notifications-outline" class="icon not_icon"></ion-icon>
 					</a>
-					<a href="#">
+					<a href="cofig_usuario.php">
 						<ion-icon name="person-circle-outline" class="icon user_icon"></ion-icon>
 					</a>
 				</div>

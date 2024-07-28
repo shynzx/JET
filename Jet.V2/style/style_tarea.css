@@ -13,24 +13,26 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    height: 5.5rem;
-    padding: .1rem;
-    border-bottom: .2rem solid rgb(132, 12, 60); 
-    z-index: 10; /* Ensure the header is below the sidebar */
+    align-items: center;
+    height: 5.5rem; /* Altura del header */
+    padding: .1rem .8rem;
+    border-bottom: .2rem solid rgb(132, 12, 60);
+    z-index: 10;
     position: fixed;
-    top:0;
+    top: 0;
     width: 100%;
     background-color: rgba(25, 25, 25, 255);
+    color: white; /* Asegurar que el texto sea visible */
 }
 
 .logo{
-    border-right: .2rem solid rgb(132, 12, 60);
+
     margin-left: 1rem;
     padding-right: 1rem;
 }
 
 .logo img{
-    height: 5rem;
+    max-height: 50px;
 }
 
 .header .header_content {
@@ -93,6 +95,7 @@ body {
 main {
     background-image: linear-gradient(to bottom right, rgb(0, 145, 173), rgb(183, 9, 76));
     z-index: -1;
+    
 }
 
 .tasks {
@@ -105,10 +108,10 @@ main {
 .tasks_header {
     width: 90%;
     height: auto;
-    background-color: rgba(15, 19, 19, 0.849);
+    background-color: rgba(15, 19, 19, 0.98); /* Fondo opaco */
     position: fixed;
     top: 7rem;
-    z-index: 1;
+    z-index: 2; /* Asegura que esté encima de otros elementos */
     border-radius: 1rem;
 }
 
@@ -169,7 +172,8 @@ main {
 .task_lists-container {
     display: flex; /* Configura el contenedor como un contenedor flex */
     gap: 1.6rem; /* Espacio entre los elementos flexibles */
-    height: 25.5rem;
+    height: 100vh;
+    min-height: 100%;
     width: 90%;
     margin-top: 10rem;
     overflow-y: hidden;
@@ -178,13 +182,20 @@ main {
 .task-container {
     width: 50%; /* Organiza los elementos en una columna */
     align-items: center; /* Centra los elementos horizontalmente */
+    
 }
+
 
 .task-container h3 {
     text-align: center; /* Centra el texto dentro del h3 */
     margin: 0; /* Opcional: Elimina los márgenes para un ajuste más preciso */
     font-size: 1.5rem ;
     margin-top: 1rem;
+    position:fixed;
+    padding-left: 14rem;
+    color:white;
+    z-index: 1;
+
 }
 
 .task_list, .task_list_completed {
@@ -196,7 +207,8 @@ main {
     display: grid;
     grid-template-rows: repeat(auto-fill, minmax(2.5rem, 1fr));
     gap: 5rem;
-    height: 22.5rem;
+    height: 100%;
+    
 }
 
 .task_card{
@@ -209,9 +221,11 @@ main {
     transition: transform 0.3s;
     transform-origin: center;
     transform: scale(1);
-    margin-top: .5rem;
+    margin-top: 1.4rem;
     height: 7rem;
     overflow-wrap: break-word; 
+    position: sticky;
+    
 }
 
 .task_options {
