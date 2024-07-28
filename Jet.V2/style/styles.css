@@ -87,43 +87,41 @@ footer {
 
 /** Inicia aviso de privacidad. **/
 
-.angelito{
-    height: 100% ;
+.angelito {
     min-height: 100vh;
+    padding-top: 5.7rem; /* Ajusta el padding superior para que no se superponga con el header */
 }
 
-.aviso_privacidad{
+.aviso_privacidad {
     text-align: center;
     height: auto;
     margin: 3rem;
-    
 }
 
-.aviso_privacidad h1{
+.aviso_privacidad h1 {
     font-size: 2.6rem;
     font-weight: 700;
     margin: 1rem 0;
     color: rgb(0, 0, 0);
 }
 
-.aviso_privacidad  p{
+.aviso_privacidad p {
     color: rgb(0, 0, 0);
     font-size: 1rem;
 }
 
-.aviso_privacidad h2{
+.aviso_privacidad h2 {
     color: rgb(0, 0, 0);
     font-size: 1.4rem;
     font-weight: 600;
     margin: 2rem 0;
 }
-    
-.aviso_privacidad a{
+
+.aviso_privacidad a {
     display: grid;
     margin: 1rem;
     text-decoration: none;
     color: black;
-
 }
 
 .regreso a {
@@ -143,25 +141,18 @@ footer {
 
 /* Media Queries */
 @media (max-width: 768px) {
-
     .footer_container {
         flex-direction: column;
         align-items: center;
     }
 
-
-    .header_buscador, .header_iconos svg{
+    .header_buscador, .header_iconos svg {
         display: none;
     }
-
-
-    
 }
 
-
 @media screen and (min-height: 1216px) {
-    .aviso_privacidad h2 , .aviso_privacidad p, .aviso_privacidad a{
+    .aviso_privacidad h2, .aviso_privacidad p, .aviso_privacidad a {
         font-size: 2rem;
     }
-    
 }
