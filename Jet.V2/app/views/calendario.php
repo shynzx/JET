@@ -22,7 +22,7 @@
 <body>
 	<header class="header">
         <div class="logo">
-            <a id="logo" href="tarea.html">
+            <a id="logo" href="tarea.php">
                 <img src="../../img/marca.png" alt="Logo de la app.">
             </a>
         </div>

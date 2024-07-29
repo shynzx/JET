@@ -15,7 +15,7 @@
 	<body>
 		<header>
 			<div class="marca">
-				<a href="index.html">
+				<a href="index.php">
 					<img src="../../img/marca.png" alt="" />
 				</a>
 			</div>
