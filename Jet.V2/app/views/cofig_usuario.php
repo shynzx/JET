@@ -1,5 +1,10 @@
-<?php 
-session_start();
+<?php
+  //Cargar sesion del usuario logueado
+  session_start();
+	if(!isset($_SESSION['autenticado'])){//Si no hay un usuario logueado, regresar al logueo**
+    header("Location: index.php");
+
+  }
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -20,13 +25,13 @@ session_start();
 			</div>
 			<div class="header_content">
 				<nav>
-					<a href="tarea.html">
+					<a href="tarea.php">
 						<ion-icon name="list-outline" class="nav_icon"></ion-icon> Tareas
 					</a>
-					<a href="notas.html">
+					<a href="notas.php">
 						<ion-icon name="document-outline" class="nav_icon"></ion-icon> Notas
 					</a>
-					<a href="calendario.html">
+					<a href="calendario.php">
 						<ion-icon name="calendar-number-outline" class="nav_icon"></ion-icon> Calendario
 					</a>
 				</nav>
