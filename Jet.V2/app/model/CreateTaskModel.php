@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $result = $TaskController->createTask($userId, $title, $tags, $content, $finishDate);
     
     if ($result){
-        header("Location:../views/tarea.html");
+        header("Location:../views/tarea.php");
         exit;
     } else{
         echo "Failed register";
