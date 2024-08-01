@@ -9,8 +9,8 @@ class DataBase {
     public function __construct() {
         self::$localhost = 'localhost';
         self::$database = 'jet';
-        self::$username = 'root'; 
-        self::$password = 'Root'; 
+        self::$username = 'enrique'; 
+        self::$password = '125128HL:v125'; 
         self::connect();
     }
 
