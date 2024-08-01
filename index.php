@@ -3,11 +3,11 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="css/style_index.css" />
-		<link rel="stylesheet" href="css/normaliz.css" />
+		<link rel="stylesheet" href="/Jet.V2/css/style_index.css" />
+		<link rel="stylesheet" href="/Jet.V2/css/normaliz.css" />
 		<link
 			rel="shortcut icon"
-			href="/favicon_io/favicon.ico"
+			href="/Jet.V2/favicon_io/favicon.ico"
 			type="image/x-icon"
 		/>
 		<title>JET</title>
@@ -16,12 +16,12 @@
 		<header>
 			<div class="marca">
 				<a href="index.php">
-					<img src="/img/marca" alt="" />
+					<img src="/Jet.V2/img/marca.png" alt="" />
 				</a>
 			</div>
 			<div class="login">
 				<div class="inicio_sesion">
-					<a href="login.html"> Inicio de sesion </a>
+					<a href="/Jet.V2/app/views/login.html"> Inicio de sesion </a>
 				</div>
 			</div>
 		</header>
@@ -116,13 +116,13 @@
 		<footer>
 			<div class="footer_container" id="footer">
 				<div>
-					<a href="/app/views/aviso_privacidad.html"> Aviso de privacidad </a>
+					<a href="/Jet.V2/app/views/aviso_privacidad.html"> Aviso de privacidad </a>
 				</div>
 				<div>
-					<a href="/app/views/terminos_condiciones.html"> Terminos y condiciones </a>
+					<a href="/Jet.V2/app/views/terminos_condiciones.html"> Terminos y condiciones </a>
 				</div>
 				<div>
-					<a href="/app/views/mapa.html"> Mapa del sitio </a>
+					<a href="/Jet.V2/app/views/mapa.html"> Mapa del sitio </a>
 				</div>
 			</div>
 			<div class="derechos">
