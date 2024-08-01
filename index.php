@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="../../css/style_index.css" />
-		<link rel="stylesheet" href="../../css/normaliz.css" />
+		<link rel="stylesheet" href="css/style_index.css" />
+		<link rel="stylesheet" href="css/normaliz.css" />
 		<link
 			rel="shortcut icon"
 			href="/favicon_io/favicon.ico"
@@ -16,7 +16,7 @@
 		<header>
 			<div class="marca">
 				<a href="index.php">
-					<img src="../../img/marca.png" alt="" />
+					<img src="/img/marca" alt="" />
 				</a>
 			</div>
 			<div class="login">
@@ -116,13 +116,13 @@
 		<footer>
 			<div class="footer_container" id="footer">
 				<div>
-					<a href="aviso_privacidad.html"> Aviso de privacidad </a>
+					<a href="/app/views/aviso_privacidad.html"> Aviso de privacidad </a>
 				</div>
 				<div>
-					<a href="terminos_condiciones.html"> Terminos y condiciones </a>
+					<a href="/app/views/terminos_condiciones.html"> Terminos y condiciones </a>
 				</div>
 				<div>
-					<a href="mapa.html"> Mapa del sitio </a>
+					<a href="/app/views/mapa.html"> Mapa del sitio </a>
 				</div>
 			</div>
 			<div class="derechos">
