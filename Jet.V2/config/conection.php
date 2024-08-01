@@ -7,7 +7,7 @@ class DataBase {
     public static $databaseConnection;
 
     public function __construct() {
-        self::$localhost = 'jet.mysql.database.azure.com';
+        self::$localhost = 'localhost';
         self::$database = 'jet';
         self::$username = 'enrique'; 
         self::$password = '125128HL:v125'; 
