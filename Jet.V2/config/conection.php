@@ -9,7 +9,7 @@ class DataBase {
     public function __construct() {
         self::$localhost = 'jet.mysql.database.azure.com';
         self::$database = 'jet';
-        self::$username = 'enrique@jet'; // Nota el '@jet' al final del username.
+        self::$username = 'enrique'; // Nota el '@jet' al final del username.
         self::$password = '125128HL:v125'; 
         self::connect();
     }
