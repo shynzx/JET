@@ -17,7 +17,7 @@ class DataBase {
     private static function connect() {
         try {
             $options = [
-                PDO::MYSQL_ATTR_SSL_CA => 'BaltimoreCyberTrustRoot.crt.pem', // Ruta al certificado SSL
+                PDO::MYSQL_ATTR_SSL_CA => 'DigiCertGlobalRootCA.crt.pem', // Ruta al certificado SSL
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
                 PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
             ];
