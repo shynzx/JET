@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style/style_login.css">
+    <link rel="shortcut icon" href="/favicon_io/favicon.ico" type="image/x-icon">
+    <title>Inicio de sesion</title>
+</head>
+<body>
+    <div class="wrapper">
+        <form method="post"  action="../model/LoginModel.php">
+            <div class="logo">
+                <h1>Just Enough Time</h1>
+            </div>
+            <h2>Inicio de sesion</h2>
+            <div class="input-box">
+                <input type="email" placeholder="Ingresar su correo" name="correo"
+                required>
+                <i class='bx bx-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Ingrese su contraseña" name = "contraseña" id="Input"
+                required>
+                <i class='bx bx-lock-alt' id="Eye" ></i>
+            </div>
+            <div class="remeber-forgot">
+                <a href="recuperación_contraseña.html">Olvido la contraseña?</a>
+            </div>
+
+            <button type="submit" class="btn">Inicio de sesion</button>
+
+            <div class="register-link">
+                <p>No tienes cuenta? <a 
+                href="registro.html">Registrate</a></p>
+            </div>
+            <script src=code.js></script>
+    </div>
+</body>
+</html>
