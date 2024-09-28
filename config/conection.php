@@ -6,30 +6,21 @@ class DataBase {
     private static $database;
     public static $databaseConnection;
 
-    private function __construct() {
-        // Initialize database credentials from environment variables
-        self::$localhost = getenv('DB_HOST') ?: 'jet.mysql.database.azure.com';
-        self::$database = getenv('DB_NAME') ?: 'jet';
-        self::$username = getenv('DB_USER') ?: 'enrique@jet'; // Note the '@jet' at the end of the username.
-        self::$password = getenv('DB_PASS') ?: '125128HL:v125';
+    public function __construct() {
+        self::$localhost = 'localhost';
+        self::$database = 'jet';
+        self::$username = 'root'; 
+        self::$password = 'Root'; 
         self::connect();
     }
 
     private static function connect() {
         try {
-            $options = [
-                PDO::MYSQL_ATTR_SSL_CA => getenv('DB_SSL_CA') ?: 'DigiCertGlobalRootCA.crt.pem', // Path to SSL certificate
-                PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-                PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-            ];
             self::$databaseConnection = new PDO(
-                "mysql:host=" . self::$localhost . ";dbname=" . self::$database, self::$username, self::$password, $options
+                "mysql:host=" . self::$localhost . ";dbname=" . self::$database, self::$username, self::$password
             );
         } catch (PDOException $error) {
-            // Log error to a file
-            error_log("Failed connection to database: " . $error->getMessage());
-            // Optionally, handle the error gracefully
-            die("Database connection failed. Please try again later.");
+            echo "Failed connection to database: " . $error->getMessage();
         }
     }
 
