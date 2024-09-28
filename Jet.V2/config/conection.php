@@ -10,7 +10,7 @@ class DataBase {
         self::$localhost = 'localhost';
         self::$database = 'jet';
         self::$username = 'root'; 
-        self::$password = 'Root'; 
+        self::$password = '1234'; 
         self::connect();
     }
 

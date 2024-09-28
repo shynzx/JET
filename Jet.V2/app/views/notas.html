@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../style/notas.css">
-
-
     <title>J.E.T</title>
 </head>
 
@@ -40,7 +38,6 @@
         </div>
     </header>
 
-
     <main>
         <section class="notes">
             <div class="notes_header">
@@ -69,117 +66,12 @@
             </div>
             <div class="notes_list">
                 <div class="note_list-container">
-                    <div class="note_card">
-                        <div class="note_summary">
-                            <h3 class="note_title"> Seguridad de base de datos</h3>
-                            <p class="note_date">Fecha de creación: 25/07/2024</p>
-                            <p class="note_tags">Etiquetas: DB, Programación</p>
-                        </div>
-                        <div class="note_options">
-                            <ion-icon name="pencil-outline" onclick="openEditModal()"></ion-icon>
-                        </div>
-                        <div class="note_detail">
-                            <p>
-                                La seguridad de bases de datos es una preocupación crítica en la era digital, donde la
-                                protección de la información se ha convertido en una prioridad primordial para las
-                                organizaciones. Las bases de datos albergan datos sensibles y valiosos, desde
-                                información personal de los clientes hasta secretos comerciales y registros financieros.
-                                La seguridad de estas bases de datos es esencial para prevenir accesos no autorizados,
-                                alteraciones maliciosas y pérdida de datos.
+                    <!-- Aquí se cargarán las notas dinámicamente -->
+                </div>
 
-                                1. Principios Fundamentales de la Seguridad de Bases de Datos
-                                La seguridad de bases de datos se basa en tres principios fundamentales:
-
-                                Confidencialidad: Asegura que solo las personas autorizadas puedan acceder a la
-                                información. La confidencialidad se protege mediante el uso de técnicas como cifrado y
-                                control de acceso.
-
-                                Integridad: Garantiza que los datos sean precisos y completos, y que no se alteren de
-                                manera no autorizada. La integridad de los datos se mantiene mediante el uso de
-                                mecanismos de validación y control de transacciones.
-
-                                Disponibilidad: Asegura que los datos estén disponibles para los usuarios autorizados
-                                cuando los necesiten. La disponibilidad se logra a través de la implementación de
-                                sistemas de respaldo y recuperación, así como la protección contra ataques de denegación
-                                de servicio.
-
-                                2. Estrategias de Seguridad en la Base de Datos
-                                Las estrategias para proteger una base de datos involucran múltiples capas de seguridad,
-                                cada una diseñada para abordar diferentes vectores de ataque y vulnerabilidades:
-
-                                Control de Acceso: Es fundamental definir quién tiene acceso a qué datos. Esto se logra
-                                mediante la implementación de políticas de control de acceso que incluyen la
-                                autenticación (verificación de la identidad del usuario) y la autorización
-                                (determinación de los permisos del usuario).
-
-                                Cifrado de Datos: El cifrado protege la información al convertirla en un formato
-                                ilegible para cualquier persona que no tenga la clave adecuada. Esto puede aplicarse
-                                tanto a datos en tránsito (transmitidos a través de redes) como a datos en reposo
-                                (almacenados en discos duros o servidores).
-
-                                Auditoría y Monitoreo: Las auditorías regulares y el monitoreo continuo son esenciales
-                                para detectar y responder a actividades sospechosas. Los registros de auditoría
-                                proporcionan un historial detallado de las acciones realizadas en la base de datos, lo
-                                que facilita la identificación de posibles brechas de seguridad.
-
-                                Seguridad en la Red: Proteger la red a través de cortafuegos, redes privadas virtuales
-                                (VPN) y sistemas de detección de intrusiones (IDS) ayuda a prevenir ataques externos y
-                                proteger los datos en tránsito.
-
-                                Gestión de Parches y Actualizaciones: Mantener el software de la base de datos y los
-                                sistemas operativos actualizados con los últimos parches de seguridad es crucial para
-                                protegerse contra vulnerabilidades conocidas.
-
-                                Respaldo y Recuperación: Implementar una estrategia robusta de respaldo y recuperación
-                                garantiza que los datos puedan restaurarse en caso de pérdida o daño. Los respaldos
-                                deben ser realizados regularmente y almacenados en ubicaciones seguras.
-
-                                3. Amenazas Comunes y Medidas de Mitigación
-                                Inyecciones SQL: Una de las amenazas más comunes a las bases de datos es la inyección
-                                SQL, donde un atacante inserta código SQL malicioso a través de formularios o consultas.
-                                La mitigación incluye el uso de consultas preparadas y procedimientos almacenados.
-
-                                Ataques de Fuerza Bruta: Los ataques de fuerza bruta buscan adivinar contraseñas o
-                                credenciales mediante la prueba de múltiples combinaciones. Se deben emplear contraseñas
-                                fuertes y técnicas de bloqueo después de intentos fallidos para prevenir estos ataques.
-
-                                Robo de Datos: El robo de datos puede ocurrir a través de accesos no autorizados o
-                                brechas de seguridad. La implementación de cifrado y controles de acceso rigurosos es
-                                clave para proteger los datos.
-
-                                Manipulación de Datos: La manipulación maliciosa de datos puede comprometer la
-                                integridad de la base de datos. Es esencial validar y verificar todos los datos y
-                                utilizar controles de acceso para prevenir alteraciones no autorizadas.
-
-                                4. Cumplimiento Normativo y Estándares
-                                El cumplimiento de normativas y estándares de seguridad, como el Reglamento General de
-                                Protección de Datos (GDPR), la Ley de Protección de Información Personal de los Niños en
-                                Línea (COPPA) y el estándar de seguridad de datos de la industria de tarjetas de pago
-                                (PCI DSS), es crucial para garantizar la protección adecuada de la información y evitar
-                                sanciones legales.
-
-                                5. Educación y Capacitación
-                                La formación y la conciencia en materia de seguridad para el personal que maneja bases
-                                de datos son fundamentales. Los empleados deben estar informados sobre las mejores
-                                prácticas de seguridad, las políticas de la organización y cómo identificar posibles
-                                amenazas.
-
-                                Conclusión
-                                La seguridad de bases de datos es un campo complejo y en constante evolución. La
-                                implementación de una estrategia integral que combine controles técnicos, políticas de
-                                seguridad y formación continua es esencial para proteger los datos contra amenazas y
-                                garantizar su confidencialidad, integridad y disponibilidad. A medida que las
-                                tecnologías y las amenazas evolucionan, las organizaciones deben adaptar y reforzar
-                                continuamente sus medidas de seguridad para proteger la información crítica y mantener
-                                la confianza de sus usuarios y clientes.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div id="noteModal" class="modal">
-                        <div class="modal_content">
-                            <div class="modal_body"></div>
-                        </div>
+                <div id="noteModal" class="modal">
+                    <div class="modal_content">
+                        <div class="modal_body"></div>
                     </div>
                 </div>
 
@@ -203,7 +95,6 @@
                     </div>
                 </div>
 
-
                 <div id="editNoteModal" class="modal">
                     <div class="modal_content">
                         <div class="modal_body">
@@ -219,12 +110,13 @@
                                 <textarea id="edit_note_content" name="content" rows="4" required></textarea>
 
                                 <button type="submit">Guardar Cambios</button>
+                                <button id="eliminar_nota" type="button">Eliminar Nota</button> <!-- Botón para eliminar nota -->
                             </form>
                         </div>
                     </div>
                 </div>
 
-
+            </div>
         </section>
     </main>
 
@@ -238,7 +130,7 @@
                 </div>
                 <div>
                     <a target="_blank" href="#">
-                        TÃ©rminos y condiciones
+                        Términos y condiciones
                     </a>
                 </div>
                 <div>
@@ -253,8 +145,9 @@
         </footer>
     </div>
 
-
     <script src="../../js/notas.js"></script>
+    <script src="../../js/notasModal.js"></script>
+
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

@@ -219,6 +219,14 @@ main {
     display: none;
 }
 
+#edit_note{
+    background-color: rgb(22, 122, 151);
+    border: none;
+    width: 1.2rem;
+    border-radius: .2rem;
+
+}
+
 .note_card:hover {
     transform: scale(1.05);
 }
@@ -296,6 +304,50 @@ body.modal-open {
 }
 
 #create_noteModal .modal_body form button {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: rgb(22, 122, 151);
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#editModalTitle{
+    text-align: center;
+    font-size: 2.5rem;
+}
+#editNoteModal .modal_body {
+    padding: 2rem;
+    background-color: rgba(15, 19, 19, 0.8);
+    color: rgb(22, 122, 151);
+    border-radius: 8px;
+}
+
+#editNoteModal .modal_body form {
+    display: flex;
+    flex-direction: column;
+}
+
+#editNoteModal .modal_body form label {
+    margin-top: 1rem;
+    color: rgb(160, 26, 88);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+#editNoteModal .modal_body form input,
+#editNoteModal .modal_body form textarea {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(183, 9, 76, 0.8);
+    background-color: rgba(15, 19, 19, 0.8);
+    color: rgb(22, 122, 151);
+}
+
+#editNoteModal .modal_body form button {
     margin-top: 1rem;
     padding: 0.5rem;
     border: none;
