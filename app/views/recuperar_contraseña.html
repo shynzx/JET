@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperación de Contraseña</title>
+    <link rel="stylesheet" href="../../style/style_recuperacion.css">
+</head>
+<body>
+    <div class="container">
+        <form id="recoverForm" method="post">
+            <div class="logo">
+                <h1>Just Enough Time</h1>
+            </div>
+            <h2>Recuperación de Contraseña</h2>
+
+            <!-- Paso 1: Ingresar email -->
+            <div id="step1">
+                <div class="input-box">
+                    <input type="email" placeholder="Ingresar su email" name="email" required>
+                    <i class='bx bx-envelope'></i>
+                </div>
+                <button type="button" class="btn" id="sendCode">Enviar</button>
+            </div>
+
+            <!-- Paso 2: Ingresar código de verificación -->
+            <div id="step2" style="display:none;">
+                <div class="input-box">
+                    <input type="text" placeholder="Ingresar código de verificación" name="verificationCode" required>
+                    <i class='bx bx-key'></i>
+                </div>
+                <button type="button" class="btn" id="verifyCode">Verificar</button>
+            </div>
+
+            <!-- Paso 3: Cambiar contraseña -->
+            <div id="step3" style="display:none;">
+                <div class="input-box">
+                    <input type="password" placeholder="Nueva contraseña" name="newPassword" required>
+                    <i class='bx bx-lock-alt'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Confirmar nueva contraseña" name="confirmPassword" required>
+                    <i class='bx bx-lock-alt'></i>
+                </div>
+                <button type="submit" class="btn">Cambiar Contraseña</button>
+            </div>
+
+            <div class="back-link">
+                <p><a href="login.html">Volver al inicio de sesión</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script src="../../js/recuperación.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+/** Color del fondo del documento **/
+body {
+    color: #ffffff;
+}
+
+/** Deshacerse de los bordes, no es necesario si se usa normalize.css **/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/** Empieza el header **/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5.5rem; /* Altura del header */
+    padding: .1rem .8rem;
+    border-bottom: .2rem solid rgb(132, 12, 60);
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(25, 25, 25, 255);
+    color: white; /* Asegurar que el texto sea visible */
+}
+
+.marca img {
+    max-height: 50px;
+}
+
+.login {
+    display: flex;
+    gap: 20px;
+}
+
+.login a{
+    text-decoration: none;
+    color: white; /* Cambiado a blanco para mejor visibilidad */
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #0091AD;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.login a:hover {
+    background-color: #0056b3;
+}
+
+/** Termina el header **/
+
+/** Empieza el footer **/
+
+
+
+footer {
+    background-color: rgba(25, 25, 25, 255);
+    height: auto;
+    padding: 2rem 0;
+}
+
+.footer_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.footer_container a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.derechos {
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+/** Termina el footer **/
+
+/** Inicia aviso de privacidad. **/
+
+.angelito {
+    min-height: 100vh;
+    padding-top: 5.7rem; /* Ajusta el padding superior para que no se superponga con el header */
+}
+
+.aviso_privacidad {
+    text-align: center;
+    height: auto;
+    margin: 3rem;
+}
+
+.aviso_privacidad h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin: 1rem 0;
+    color: rgb(0, 0, 0);
+}
+
+.aviso_privacidad p {
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+}
+
+.aviso_privacidad h2 {
+    color: rgb(0, 0, 0);
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 2rem 0;
+}
+
+.aviso_privacidad a {
+    display: grid;
+    margin: 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+.regreso a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 1.5rem;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: black;
+    transition: background-color 0.3s ease;
+}
+
+.regreso a:hover {
+    background-color: #333333;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .footer_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header_buscador, .header_iconos svg {
+        display: none;
+    }
+}
+
+@media screen and (min-height: 1216px) {
+    .aviso_privacidad h2, .aviso_privacidad p, .aviso_privacidad a {
+        font-size: 2rem;
+    }
+}
