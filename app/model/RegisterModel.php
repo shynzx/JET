@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     $newUser = $registerController -> register($userName,$email,$password_hashed);
 
     if ($newUser){
-        header("Location:../views/login.php");
+        header("Location:../views/login.html");
         exit;
     } else{
         echo "Failed register";
